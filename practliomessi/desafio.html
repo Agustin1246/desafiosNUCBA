@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia de Messi</title>
+    </head>
+<body>
+
+<!-- 
+1. Crear un archivo html
+2. Utilizando las etiquetas vistas en clase, crear su perfil, es decir:
+- Foto de perfil
+- Lista con edad, nombre, apellido, mail.
+- Un párrafo con una breve descripción de ustedes. -->
+
+<header>
+    <h1>Desafio HTML</h1>
+    <h2>La web oficial de Lionel Messi</h2>
+    <h2>Aqui encontraras toda la informacion sobre Lionel Andres Messi</h2>
+    <div id="fotomessi" class="messi1">
+     <a href="https://messi.com/" target="_blank">
+        <img src="assets/messi-3-300x300.jpg" alt="Foto de Messi">
+     </a>
+    </div><hr>
+</header>
+<main>
+    <section id="biography">
+        <nav class="listaOrdenada">
+            <ol>
+                <li><a href="#biography">Biografia</a></li>
+                <li><a href="#trayectoria">Trayectoria</a></li>
+                <li><a href="#seleccion">Seleccion Argentina</a></li>
+                <li><a href="#premios">Premios</a></li>
+                <li><a href="#records">Records</a></li>
+            </ol>
+        </nav>
+        <nav class="biografia">
+            <h2>Biografia</h2>
+                 <p>Lionel Andrés Messi Cuccittini (Rosario, 24 de junio de 1987), conocido como Leo Messi, es un futbolista argentino que juega como delantero o centrocampista. <br> Jugador histórico del Fútbol Club Barcelona, al que estuvo ligado veinte años, desde 2021 integra el plantel del Paris Saint-Germain de la Ligue 1 de Francia. <br> Es también internacional con la selección de Argentina, equipo del que es capitán.</p>
+        </nav>
+        <nav class="listaDesordenada">
+             <h2>Trayectoria</h2>
+                 <ul>
+                     <li>F. C. Barcelona (2004-2021)</li>
+                     <li>Paris Saint-Germain F. C. (2021-presente)</li>
+                     <li>Seleccion Argentina (2005-presente)</li>
+                  </ul>
+        </nav>
+        <nav class="seleccion">
+            <h2> Seleccion Argentina</h2>
+            <p>El 2 de agosto de 2005, Pékerman convocó por primera vez a Messi para jugar con la selección absoluta. <br> El jugador debutó el 17 de agosto en un amistoso con Hungría que Argentina ganó 2-1 en el estadio Ferenc Puskás de Budapest. <br> Ingresó en el minuto 66 y llegó a tocar tres pelotas, pero 1m32s después fue expulsado por Markus Merk <br> tras un gesto brusco hacia el defensor Vilmos Vanczák, que lo había tironeado de la camiseta. <br>
+            Desde ese entonces sigue concurriendo a el llamado de la seleccion y tiempo despues se convertiria en el Capitan <br> de la misma, consagrandose Campeon en 5 ocaciones.</p>
+            <ul>
+                <li>Copa Mundial (sub-20)-(2005)</li>
+                <li>Juegos Olímpicos de Pekín (2008)</li>
+                <li>Copa América (2021)</li>
+                <li>Copa de Campeones Conmebol-UEFA (2022)</li>
+                <li>Copa Mundial de la FIFA (2022)</li>
+            </ul>
+        </nav>
+        <nav class="premios">
+            <h2>Premios</h2>
+            <ul>
+                <li>Balón de Oro (7 veces)</li>
+                <li>Liga de Campeones de la UEFA (4 veces)</li>
+                <li>Liga española (10 veces)</li>
+                <li>Copa del Rey (7 veces)</li>
+                <li>Copa América (1 vez)</li>
+                <li>Copa Mundial de la Fifa (1 vez)</li>
+                <li>Pichichi de la Liga española (8 veces)</li>
+                <li>Bota de Oro europea (6 veces)</li>
+            </ul>
+        </nav>
+    </section>
+    <hr>
+    <br>
+    <h2>Formulario</h2>
+    <p>Complete el formulario con sus datos</p>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Ingrese aqui su Nombre"><br><br>
+        
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" placeholder="Ingrese aqui su Apellido"><br><br>
+
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" placeholder="Ingrese aqui su Edad"><br><br>
+
+        <label for="documento">Documento</label>
+        <input type="number" id="documento" placeholder="Ingrese aqui su Documento"><br>
+        
+           <p>Provincia
+                <select name="provincia" id="pro">
+                    <option value="cba">Cordoba</option>
+                    <option value="cba1">Buenos Aires</option>
+                    <option value="cba2">Santa Fe</option>
+                    <option value="cba3">San Luis</option>
+                    <option value="cba4">Mendoza</option>
+                    <option value="cba5">Neuquen</option>
+                </select></p>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Ingrese su Email"><br><br>
+
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" placeholder="Ingrese aqui su Usuario"><br><br>
+
+        <label for="pass">Contraseña</label>
+        <input type="password" id="pass" placeholder="Ingrese su Contraseña" required><br><br>
+
+        <p>¿Cree usted que Lionel Messi es el mejor jugador del Mundo?</p>
+
+        <input type="radio" name="lio" id="messi" />
+        <label for="messi">Si</label>
+
+        <input type="radio" name="lio" id="messi1" />
+        <label for="messi1">No</label>
+
+        <input type="radio" name="lio" id="messi2" />
+        <label for="messi2">No se</label><br><br>
+
+        <p>
+            En caso de que alla puesto no, justifique su respuesta
+        </p>
+
+        <label for="texto"></label>
+        <textarea name="text" id="texto" cols="30" rows="10" placeholder="Ingrese aqui su Comentario"></textarea><br><br>
+
+        <button>Enviar informacion</button>
+    </form>
+
+</main>
+<footer>
+    <hr>
+        <br>
+            <div class="finalDePag">
+                <p>Todos los derechos reservados</p><br>
+                <p>Informacion real de Lionel Messi</p>
+            </div>
+
+    
+</footer>
+    
+</body>
+</html>
